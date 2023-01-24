@@ -1,5 +1,5 @@
 import React, { Component }  from "react";
-import { nanoid } from "nanoid";
+
 import { Form } from "./Form/Form";
 import { ContactList } from "./ContactList/ContactList";
 import Filter  from "./Filter/Filter";
