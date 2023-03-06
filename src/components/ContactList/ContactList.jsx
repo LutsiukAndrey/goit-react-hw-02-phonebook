@@ -4,7 +4,6 @@ import { Component } from 'react';
 
 export class ContactList extends Component {
   onDellateBtn = event => {
-    console.log(this.props.data);
     this.props.delateContact(event.currentTarget.id);
   };
   render() {
