@@ -19,7 +19,7 @@ export default class App extends Component {
   };
   onHandleSubmit = data => {
     if (this.isDuplicate(data.name)) {
-      alert(`this ${data.name} is already in your contacts!`);
+      alert(`${data.name} is already in your contacts!`);
       return;
     }
 
