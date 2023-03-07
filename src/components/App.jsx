@@ -18,6 +18,11 @@ export default class App extends Component {
     return this.state.contacts.find(contact => contact.name === name);
   };
   onHandleSubmit = data => {
+    if (this.isDuplicate(data.name)) {
+      alert(`this ${data.name} is already in your contacts!`);
+      return;
+    }
+
     this.setState(prevState => ({ contacts: [data, ...this.state.contacts] }));
 
     this.toRenderList();
